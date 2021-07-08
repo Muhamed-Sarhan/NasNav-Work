@@ -1,0 +1,234 @@
+:root {
+    --primary-color: #fff100;
+    --secondary-color: #542e90;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+
+  @media screen and (min-width:300px) and (max-width:640px) {
+    .container {
+      width: 95%;
+    }
+
+  }
+
+  
+  .rate {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+  }
+  .rateP {
+    margin-left: 5px;
+    margin-top: -10px;
+    font-size: 1vw;
+  }
+  .rateD {
+    margin-left: 5px;
+    margin-top: 15px;
+    font-size: 1vw;
+  }
+  .homeBrandImg {
+    width: 100px;
+    margin-left: 0;
+  }
+  .ratingBox {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .ratingBoxHome {
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    font-size: 1vw;
+  }
+  .ratingTotal {
+    color: #969695;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .currenrPriceHome {
+    color: var(--secondary-color);
+  }
+  .oldPriceHome {
+    margin-left: 25px;
+    text-decoration: line-through;
+    color: #a7a9ac;
+  }
+  .line {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+  }
+  .circleSize {
+    padding: 5% 2%;
+    border: 1px solid #d4d4d4;
+    border-radius: 50%;
+    margin-top: 5%;
+    display: inline-block;
+    width: 15%;
+    margin-right: 3%;
+    cursor: pointer;
+    font-size: 1vw;
+  }
+  .imgShape {
+    display: inline-block;
+    width: 25%;
+    margin-right: 3%;
+    cursor: pointer;
+    font-size: 1vw;
+  }
+  .imgSize {
+    border: 1px solid #d4d4d4;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 5%;
+  }
+  .size {
+    text-align: center;
+    color: var(--secondary-color);
+  }
+  
+  .quantity-control {
+    border: 1px solid #d4d4d4;
+    width: 45%;
+    padding: 7px 0;
+    margin-top: 25px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+  }
+  .plusIcon {
+    border: none;
+    background: none;
+  }
+  .iconStyle {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 13%;
+    text-align: center;
+    border-radius: 45%;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+  }
+  @media (max-width: 637px) {
+    .iconStyle {
+      width: 5%;
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+    .quantity-control {
+      width: 75%;
+    }
+  }
+  .add-to-cart {
+    padding: 16px 0;
+    border: 0;
+    width: 45%;
+    margin-top: 25px;
+    margin-right: 10px;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1vw;
+    display: inline-block;
+  }
+  .pick-up {
+    padding: 16px 0;
+    font-size: 1vw;
+    border: 0;
+    width: 45%;
+    margin-top: 25px;
+    margin-right: 10px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .skelton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .skeltonItem {
+    margin-right: 1%;
+  }
+  .buttonsInCart {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .okBtn {
+    padding: 12px 8px;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 30px;
+    width: 40%;
+    margin-right: 10px;
+  }
+  .cancelBtn {
+    padding: 12px 8px;
+    background-color: var(--secondary-color);
+    border: 0;
+    border-radius: 30px;
+    width: 50%;
+    color: #fff;
+  }
+  ul {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    .NasNavli {
+      padding: 5%;
+      &:hover {
+        background-color: var(--primary-color);
+        border-radius: 25px;
+        transition: all 0.5s;
+      }
+    }
+  }
+  a {
+    text-decoration: none !important;
+    color: #000;
+  }
+  .loadingNasNav {
+    margin-left: 45%;
+    margin-top: 20%;
+  }
+  
+.view-Btn{
+  width: 180px;
+  height: 48px;
+  font-size: 1em;
+    border-radius: 30px;
+    background-color: #FFF200;
+    cursor: pointer;
+    border: none;
+    margin-top: 2.5%
+}
+
+
+  @import './generalNac';
+  @import './brandsNav';
+  @import './catrgories';
+  @import './icons';
+  @import './productCart';
+  @import './bestSellers';
+  @import './specialSelections';
+  @import './cateCart';
+  @import './bestStyle'
