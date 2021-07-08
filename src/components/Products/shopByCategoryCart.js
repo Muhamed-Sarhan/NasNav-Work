@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const CateCart = ({product}) => {
     return (
@@ -7,7 +8,7 @@ const CateCart = ({product}) => {
             <img src={product.imgCate} className='cateImg'/>
             <div className='exploreSection'>
             <h4>{product.gender}</h4>
-            <button type="button" className="explore">Explore</button>
+            <Link to='/about' className="explore">Explore</Link>
             </div>
             
         </div>

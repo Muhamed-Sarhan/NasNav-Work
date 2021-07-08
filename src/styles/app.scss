@@ -221,7 +221,9 @@
     border: none;
     margin-top: 2.5%
 }
-
+.iconsSize{
+  width: 100%;
+}
 
   @import './generalNac';
   @import './brandsNav';
@@ -231,4 +233,5 @@
   @import './bestSellers';
   @import './specialSelections';
   @import './cateCart';
-  @import './bestStyle'
+  @import './bestStyle';
+  @import './footer'

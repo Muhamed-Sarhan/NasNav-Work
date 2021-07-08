@@ -2,6 +2,7 @@ import React,{ Component , lazy , Suspense } from 'react';
 import './styles/app.scss'
 import Navs from './components/Nav'
 import Slider from './components/Slider';
+import Footer from './components/Footer';
 import data from './services/data';
 
 
@@ -108,6 +109,9 @@ class App extends Component {
       <div className='container'>
          <AllProducts bestRef={this.bestRef} cateRef={this.cateRef} onSaleRef={this.onSaleRef} myRef={this.myRef} products={products} category={category} offers={offers} gender={gender} filteredData={filteredData} filteredDataOnSale={filteredDataOnSale} filterOnSaleSection={this.filterOnSaleSection}  filterByGender={this.filterByGender} />
       </div>
+
+      <Footer/>
+      
       </Suspense>
     </div>
     

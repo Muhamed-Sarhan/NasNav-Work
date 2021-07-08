@@ -34,11 +34,11 @@ const BestSellers = ({ gender , filterByGender ,filteredData,myRef  }) => {
 
          <div className='productList' >
          <div className='prevDiv' ref={myRef}>
-         <button onClick={() => scroll(-340)} className='prev'><Prev/></button>
+         <button onClick={() => scroll(-345)} className='prev'><Prev/></button>
          {filteredData.map((product)=>(
              <ProductCart key={product.id} product={product}/>
          ))}
-         <button onClick={() => scroll(340)} className='next'><Prev/></button>
+         <button onClick={() => scroll(345)} className='next'><Prev/></button>
          </div>
          </div>
 

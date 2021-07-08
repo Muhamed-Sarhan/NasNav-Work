@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Prev from '../Icons/Prev';
 import CateCart from './shopByCategoryCart';
 
@@ -28,6 +29,9 @@ const ShopByCategory = ({products , cateRef}) => {
         ))}
          <button onClick={() => scroll(460)} className='nextCate'><Prev/></button>
          </div>
+        </div>
+        <div className='mobile-view-all'>
+        <Link to='/about' >View All</Link>
         </div>
         </div>
     )

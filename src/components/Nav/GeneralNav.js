@@ -6,6 +6,7 @@ import Right from '../Icons/Right';
 import Yeshtery from '../Icons/Yeshtery';
 import Track from '../Icons/Track';
 import Location from '../Icons/Location';
+import { Link } from 'react-router-dom';
 
 export default function GeneralNav() {
 
@@ -21,9 +22,9 @@ export default function GeneralNav() {
         <Right />
         <p>
           The search supports synonyms. Try searching for
-          <a to='/shoppingNow' className='shopNow'>
+          <Link to='/shoppingNow' className='shopNow'>
             shop now
-          </a>
+          </Link>
         </p>
         <Left />
       </div>
@@ -45,7 +46,7 @@ export default function GeneralNav() {
         </div>
       </div>
     </div>
-    <div className='yeshtry-mobile'><Yeshtery/></div>
+    <div className='yeshtry-mobile'><Link to='/about'><Yeshtery/></Link></div>
     </div>
   );
 }

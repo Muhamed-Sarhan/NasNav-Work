@@ -32,7 +32,9 @@ const BestSales = ({products, bestRef}) => {
           <button onClick={() => scroll(680)} className='nextCate'><Prev/></button>
           </div>
          </div>
-
+         <div className='mobile-view-all'>
+         <Link to='/about' >View All</Link>
+         </div>
         </div>
     )
 }

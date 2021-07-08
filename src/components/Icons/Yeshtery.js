@@ -4,7 +4,7 @@ import yeshtery from '../../images/Group 769.svg'
 const Yeshtery = () => {
     return (
         <div>
-            <img src={yeshtery}/>
+            <img src={yeshtery} className='iconsSize'/>
         </div>
     )
 }

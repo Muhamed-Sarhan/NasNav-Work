@@ -34,19 +34,45 @@ h2{
     min-width: 290px;
     margin: 1em auto
     }
+    .feed{
+      margin-top: 2em;
+    }
 .load-more{
   display: block;
   border: 0;
-  margin: 1em auto;
-  padding: 1.5em 4em;
+  width: 200px;
+  height: 54px;
+  margin: auto;
   font-size: 1em;
   background: #ECECEC 0% 0% no-repeat padding-box;
   border-radius: 30px;
   color: #542E90;
   font-weight: 700;
-  text-transform: uppercase;
   cursor: pointer;
   
   &:focus{
     outline: 1px solid rgba(255, 255, 255, .5)}
+}
+.productListSpecial{
+  display: none;
+}
+
+@media screen and (min-width:300px) and (max-width:640px) {
+  .bestsellerTitleS{
+    width: 173px;
+    h1{
+      font-size: 0.9em;
+    }
+    h3{
+      font-size: 0.5em;
+    }
+  }
+
+  .productLoadMore{
+    display: none;
+  }
+  .productListSpecial{
+    display: block;
+  }
+  
 }

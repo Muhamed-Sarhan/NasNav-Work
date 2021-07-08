@@ -112,8 +112,7 @@ border: none;
 }
 @media screen and (min-width:300px) and (max-width:640px) {
   .web-view-all-S{
-    min-width: 100px;
-    padding: 1em 2em;
+    display: none;
   }
 }
 
@@ -239,12 +238,10 @@ color: #575756;
 
 @media screen and (min-width:300px) and (max-width:640px){
   .prev{
-    bottom: 2.5%;
-    min-width: 10%;
+    display: none;
 }
 .next{
-  bottom: 2.5%;
-  min-width: 10%;
+  display: none;
 }
 }
  
