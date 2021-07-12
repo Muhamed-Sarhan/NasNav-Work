@@ -66,7 +66,7 @@ export default class SpecialSelections extends Component {
             <div className="custom-select">
               <select
                 className="select-sel"
-                placeholder={this.state.gender}
+                value={this.state.gender}
                 onChange={this.filterSpecialSelection}
               >
                 <option className="custom-options" value="all">

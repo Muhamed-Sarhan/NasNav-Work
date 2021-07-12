@@ -48,13 +48,13 @@ const OnSale = ({
 
       <div className="productList">
         <div className="prevDiv" ref={onSaleRef}>
-          <button onClick={() => scroll(-345)} className="prev">
+          <button onClick={() => scroll(-290)} className="prev">
             <Prev />
           </button>
           {filteredDataOnSale.map((product) => (
             <ProductCart key={product.id} product={product} />
           ))}
-          <button onClick={() => scroll(345)} className="next">
+          <button onClick={() => scroll(290)} className="next">
             <Prev />
           </button>
         </div>
