@@ -7,7 +7,7 @@ import SearchMobile from "../Icons/SearchMobile";
 import Adidas from "../Icons/Adidas";
 import Menu from "../Icons/Menu";
 
-export default function BrandsNav() {
+export default function BrandsNav({ handleToggle }) {
   return (
     <div className="Bnav">
       <div className="Fpart">
@@ -38,10 +38,10 @@ export default function BrandsNav() {
           <p>Wishlist</p>
         </div>
 
-        <div className="rightCartL">
+        <button onClick={handleToggle} className="rightCartBtn">
           <User />
           <p>Login</p>
-        </div>
+        </button>
       </div>
     </div>
   );

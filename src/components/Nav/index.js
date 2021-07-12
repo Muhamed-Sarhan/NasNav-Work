@@ -4,13 +4,13 @@ import BrandsNav from "./BrandsNav";
 import Categories from "./Categories";
 import MobileMenu from "./MobileMenu";
 
-const Navs = () => {
+const Navs = ({ handleToggle }) => {
   return (
     <div className="navsContainer">
       <GeneralNav />
-      <BrandsNav />
+      <BrandsNav handleToggle={handleToggle} />
       <Categories />
-      <MobileMenu />
+      <MobileMenu handleToggle={handleToggle} />
     </div>
   );
 };

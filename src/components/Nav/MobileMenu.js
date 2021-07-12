@@ -5,7 +5,7 @@ import Brands from "../Icons/brands";
 import Account from "../Icons/Account";
 import { Link } from "react-router-dom";
 
-const MobileMenu = () => {
+const MobileMenu = ({ handleToggle }) => {
   return (
     <div className="mobile-nav-down">
       <div className="menu-mobile">
@@ -24,7 +24,7 @@ const MobileMenu = () => {
           <p>Brands</p>
         </Link>
 
-        <Link to="/about" className="mobile-icon">
+        <Link to="/about" onClick={handleToggle} className="mobile-icon">
           <Account />
           <p>Account</p>
         </Link>

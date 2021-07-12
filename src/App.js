@@ -5,6 +5,7 @@ import Navs from "./components/Nav";
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import data from "./services/data";
+import MenuYeshtery from "./components/Menu/munu";
 
 const FirstPage = lazy(() => {
   return new Promise((resolve) => {
@@ -27,8 +28,13 @@ class App extends Component {
       gender: "",
       filteredData: products,
       filteredDataOnSale: products,
+      isActive: false,
     };
   }
+
+  handleToggle = () => {
+    this.setState({ isActive: !this.state.isActive });
+  };
 
   filterByGender = (e) => {
     let genderValue = e.target.value;
@@ -94,6 +100,7 @@ class App extends Component {
       filteredDataOnSale,
       category,
       offers,
+      isActive,
     } = this.state;
 
     return (
@@ -106,7 +113,12 @@ class App extends Component {
               </div>
             }
           >
-            <Navs />
+            <Navs handleToggle={this.handleToggle} />
+
+            <MenuYeshtery
+              isActive={isActive}
+              handleToggle={this.handleToggle}
+            />
 
             <Route
               path="/"

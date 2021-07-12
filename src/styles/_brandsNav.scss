@@ -1,79 +1,77 @@
 .Bnav {
-    width: 70%;
-    margin: auto;
-    min-height: 9vh;
+  width: 70%;
+  margin: auto;
+  min-height: 9vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: tranparent !important;
+  color: #000000 !important;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.partBb {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9vw;
+}
+.partCb {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+
+  .rightCart {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: tranparent !important;
-    color: #000000 !important;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-  }
-  
-  .partBb {
-    display: flex;
-    justify-content: space-around;
+    width: 30%;
     font-size: 0.9vw;
-  }
-  .partCb {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    cursor: pointer;
-  
-    .rightCart {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 30%;
+
+    p {
+      margin-left: 7%;
       font-size: 0.9vw;
-  
-      p {
-        margin-left: 7%;
-        font-size: 0.9vw;
-        width: 75%;
-      }
+      width: 75%;
     }
   }
-  .rightCartS{
+}
+.rightCartS {
+  display: none;
+}
+.rightCartBtn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  width: 25%;
+  font-size: 0.9vw;
+  cursor: pointer;
+}
+
+.munu-part {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .search-part {
     display: none;
   }
-  .rightCartL {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 25%;
-    font-size: 0.9vw;
+  .munu-part {
+    display: block;
   }
-
-  
-
-
-  .munu-part{
+  .Bnav {
+    width: 100%;
+    min-height: 6vh;
+  }
+  .rightCartBtn {
     display: none;
   }
-  @media screen and (max-width:1000px) {
-    .search-part{
-      display: none;
-    }
-    .munu-part{
-      display: block;
-    }
-    .Bnav{
-      width: 100%;
-      min-height: 6vh;
-    }
-    .rightCartL{
-      display: none;
-    }
-    .rightCartS{
-      display: block;
-    }
-    .rightCart p{
-      display: none;
-    }
+  .rightCartS {
+    display: block;
   }
-  
-  
+  .rightCart p {
+    display: none;
+  }
+}
