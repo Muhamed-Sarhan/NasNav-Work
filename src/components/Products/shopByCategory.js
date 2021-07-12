@@ -1,40 +1,40 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
-import Prev from '../Icons/Prev';
-import CateCart from './shopByCategoryCart';
+import React from "react";
+import { Link } from "react-router-dom";
+import Prev from "../Icons/Prev";
+import CateCart from "./shopByCategoryCart";
 
+const ShopByCategory = ({ products, cateRef }) => {
+  const scroll = (scrollOffset) => {
+    cateRef.current.scrollLeft += scrollOffset;
+  };
 
-const ShopByCategory = ({products , cateRef}) => {
-
-    const scroll = (scrollOffset) => {
-        cateRef.current.scrollLeft += scrollOffset;
-      };
-
-
-    return (
-        <div className='bestSellers'>
-         <div className='bestsellerHeader'>
-            <div className='bestsellerTitle'>
-            <h1 className='title'>Shop By Category</h1>
-            <h3 className='caption'>Start shopping by your favourite category</h3>
-            </div>
-         </div>
-
-
-        <div className='productList'>
-        <div className='prevDiv' ref={cateRef}>
-         <button onClick={() => scroll(-460)} className='prevCate'><Prev/></button>
-         {products.map((product)=>(
-            <CateCart key={product.id} product={product}/>
-        ))}
-         <button onClick={() => scroll(460)} className='nextCate'><Prev/></button>
-         </div>
+  return (
+    <div className="bestSellers">
+      <div className="bestsellerHeader">
+        <div className="bestsellerTitle">
+          <h1 className="title">Shop By Category</h1>
+          <h3 className="caption">Start shopping by your favourite category</h3>
         </div>
-        <div className='mobile-view-all'>
-        <Link to='/about' >View All</Link>
-        </div>
-        </div>
-    )
-}
+      </div>
 
-export default ShopByCategory
+      <div className="productList">
+        <div className="prevDiv" ref={cateRef}>
+          <button onClick={() => scroll(-460)} className="prevCate">
+            <Prev />
+          </button>
+          {products.map((product) => (
+            <CateCart key={product.id} product={product} />
+          ))}
+          <button onClick={() => scroll(460)} className="nextCate">
+            <Prev />
+          </button>
+        </div>
+      </div>
+      <div className="mobile-view-all">
+        <Link to="/about">View All</Link>
+      </div>
+    </div>
+  );
+};
+
+export default ShopByCategory;

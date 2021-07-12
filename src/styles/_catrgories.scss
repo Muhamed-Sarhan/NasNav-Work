@@ -1,64 +1,64 @@
-.Cnav{
+.Cnav {
   width: 100%;
   background-color: #000000 !important;
 }
 .categoryBar {
-    width: 70%;
-    margin: auto;
-    color: #ffffff !important;
-    min-height: 6vh !important;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1em;
-    h5 {
-      cursor: pointer;
-    }
+  width: 70%;
+  margin: auto;
+  color: #ffffff !important;
+  min-height: 6vh !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+  a {
+    cursor: pointer;
+    color: #ffffff;
   }
-  
-  .categoryBarItemOffers {
-    color: #f11133 !important;
-    font-weight: bolder;
-  }
+}
 
-  .mobile-nav-down{
+.categoryBarItemOffers {
+  color: #f11133 !important;
+  font-weight: bolder;
+}
+
+.mobile-nav-down {
+  display: none;
+  height: 7vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.48px 1px #00000080;
+  position: fixed;
+  bottom: 0;
+  z-index: 100000000000;
+  width: 100%;
+  align-items: center;
+}
+.menu-mobile {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mobile-nav-down {
+    display: block;
+  }
+  .Cnav {
     display: none;
-    height: 7vh;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 0px 0.48px 1px #00000080;
-    position: fixed;
-    bottom: 0;
-    z-index: 100000000000;
-    width: 100%;
-    align-items: center;
   }
-  .menu-mobile{
-    width: 85%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  .mobile-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    p{
-      text-align: center;
+  .mobile-icon {
+    p {
+      font-size: 0.5em;
     }
   }
-  @media screen and (max-width:1000px) {
-    .mobile-nav-down{
-      display: block;
-    }
-    .Cnav{
-      display: none;
-    }
-    .mobile-icon{
-      p{
-        font-size: 0.5em;
-      }
-    }
-  }
+}

@@ -1,11 +1,24 @@
-import React from 'react';
-import facebook from '../../images/faceBook.svg';
+import React from "react";
 
 const FaceBook = () => {
   return (
-    <div>
-      <img src={facebook} />
-    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32.825"
+      height="32.825"
+      viewBox="0 0 32.825 32.825"
+    >
+      <g transform="translate(-5766.245 -6974.869)">
+        <path
+          style={{ fill: "#1976d1" }}
+          d="M5794.967,6974.869h-24.619a4.107,4.107,0,0,0-4.1,4.1v24.619a4.107,4.107,0,0,0,4.1,4.1h24.619a4.107,4.107,0,0,0,4.1-4.1v-24.619A4.107,4.107,0,0,0,5794.967,6974.869Z"
+        />
+        <path
+          style={{ fill: "#f9f9f9" }}
+          d="M5793.941,6991.281h-5.129v-4.1c0-1.132.919-1.026,2.052-1.026h2.051v-5.129h-4.1a6.155,6.155,0,0,0-6.155,6.155v4.1h-4.1v5.129h4.1v11.284h6.155V6996.41h3.078Z"
+        />
+      </g>
+    </svg>
   );
 };
 

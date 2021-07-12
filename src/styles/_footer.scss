@@ -1,252 +1,272 @@
 .main-footer {
-    width: 100%;
-    color: white;
-    background-color: #3c3c3b;
-    padding-top: 3em;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 3em;
+  width: 100%;
+  color: white;
+  background-color: #3c3c3b;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 3em;
+}
+
+.footer-Container {
+  width: 70%;
+  margin: auto;
+}
+.containerFooter {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.footerLogeY {
+  width: 220px;
+}
+.about {
+  width: 40%;
+  padding-right: 1.5em;
+  p {
+    font-size: 1vw;
+    margin-top: 5%;
   }
-  
+  h1 {
+    color: var(--primary-color);
+  }
+}
+.buttonInInput {
+  background-color: #fff;
+  border-radius: 24px;
+  margin: 2.5px;
+  margin-left: 5em;
+  width: 576px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  input {
+    width: 79%;
+    padding: 16px 18px;
+    border-radius: 24px;
+    border: 0;
+    text-decoration: none;
+  }
+  input:focus {
+    outline: none;
+  }
+  button {
+    width: 120px;
+    margin: 5px 4.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 7px 17px;
+    border: 0;
+    border-radius: 19px;
+    opacity: 1;
+    h4 {
+      letter-spacing: -0.25px;
+      font-size: 10px;
+      text-align: right;
+      font-weight: 900;
+    }
+  }
+}
+.inputCaption {
+  width: 80%;
+  margin: auto;
+  padding: 0.5em;
+}
+
+.social {
+  width: 60%;
+  margin-bottom: 1em;
+  border-left: 0.5px solid rgb(165, 164, 164);
+  display: flex;
+  flex-direction: column;
+}
+.media {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ySocial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5em;
+  margin-right: 25%;
+  min-width: 100%;
+  p {
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 10px;
+  }
+}
+
+.sections {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-bottom: 1em;
+  border-right: 0.5px solid rgb(165, 164, 164);
+}
+
+.yLinks {
+  padding: 0.6em 0.5em;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 600;
+  width: 70%;
+}
+
+.footermenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+}
+
+.copyRights {
+  width: 25%;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+}
+
+.payment {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nasnav {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.secondDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2em 0 2em 0;
+}
+hr.hrStyle {
+  border: 0;
+  height: 1px;
+  background: rgb(165, 164, 164);
+  width: 85%;
+  margin: auto;
+}
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+  .main-footer {
+    bottom: 7vh;
+    margin-top: 5em;
+  }
   .footer-Container {
-    width: 70%;
+    width: 90%;
     margin: auto;
   }
   .containerFooter {
     width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-  }
-  .footerLogeY{
-    width: 220px;
+    flex-direction: column;
   }
   .about {
-    width: 40%;
-    padding-right: 1.5em;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10%;
     p {
-      font-size: 1vw;
+      font-size: 0.6em;
       margin-top: 5%;
-    }
-    h1 {
-      color: var(--primary-color);
+      letter-spacing: -0.25px;
     }
   }
-  .buttonInInput {
-    background-color: #fff;
-    border-radius: 25px;
-    padding: 5px;
-    width: 80%;
+  .footerLogeY {
+    width: 124px;
+  }
+  .social {
+    width: 100%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    input {
-      width: 79.7%;
-      padding: 10px;
-      border-radius: 25px;
-      border: 0;
-      text-decoration: none;
-    }
-    input:focus {
-      outline: none;
-    }
-    button {
-      width: 20%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      background-color: var(--primary-color);
-      padding: 0.5em 1.5em;
-      border: 0;
-      border-radius: 25px;
-      font-size: 0.6em;
-      font-weight: 800;
-    }
+    border-top: 0.5px solid rgb(165, 164, 164);
+    border-left: 0;
   }
   .inputCaption {
-    width: 80%;
-    margin: auto;
-    padding: 0.5em;
+    font-size: 0.9em;
+    letter-spacing: -0.3px;
+    text-align: center;
+    padding-top: 2em;
+    font-weight: 300;
   }
-  
-  .social {
-    width: 60%;
-    margin-bottom: 1em;
-    border-left: 0.5px solid rgb(165, 164, 164);
-    display: flex;
-    flex-direction: column;
-  }
-  .media {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .ySocial {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0.5em;
-    margin-right: 25%;
-    width: 60%;
-    p {
-      font-size: 0.75em;
-      font-weight: 600;
-      color: #fff;
+  .buttonInInput {
+    width: 288px;
+    height: 35px;
+    border-radius: 17px;
+    margin: 1% 1%;
+    input {
+      width: 79%;
+      padding: 10px 16px;
+      border-radius: 17px;
+    }
+    button {
+      width: 92px;
+      height: 30px;
+      margin: 2.57px 2.7px;
+      background: #fff200 0% 0% no-repeat padding-box;
+      border-radius: 15px;
+      opacity: 1;
+      font-size: 9px;
+      padding: 7px 13px;
+      h4 {
+        margin-right: 6px;
+      }
     }
   }
-  
   .sections {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    margin-bottom: 1em;
-    border-right: 0.5px solid rgb(165, 164, 164);
-  }
-  
-  .yLinks {
-    padding: 0.6em 0.5em;
-    color: #fff;
-    font-size: 0.75em;
-    font-weight: 600;
-    width: 70%;
-  }
-  
-  .footermenu {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-top: 3%;
+    margin-left: 1%;
+    margin-bottom: 1em;
+    border-right: 0;
   }
-  
-  .copyRights {
-    width: 25%;
-    font-size: 0.9em;
-    display: flex;
-    justify-content: center;
+  .yLinks {
+    font-size: 0.6em;
+    font-weight: 600;
+    width: 100%;
+    padding: 0.9em 0.5em;
   }
-  
-  .payment {
-    width: 25%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  .footermenu {
+    border-top: 0.5px solid rgb(165, 164, 164);
+    padding-top: 1.5em;
+    margin-top: 1.5em;
   }
-  .nasnav {
-    width: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  .media {
+    width: 100%;
+    align-items: flex-start;
   }
   .secondDiv {
+    flex-direction: column;
+  }
+  .copyRights {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  .payment {
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 2em 0 2em 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 0.5px solid rgb(165, 164, 164);
   }
-  hr.hrStyle {
-    border: 0;
-    height: 1px;
-    background: rgb(165, 164, 164);
-    width: 85%;
-    margin: auto;
+  .nasnav {
+    width: 95%;
+    justify-content: space-evenly;
   }
-  @media screen and (min-width:300px) and (max-width:640px) {
-    .main-footer{
-      bottom: 7vh;
-      margin-top: 5em;
-    }
-    .footer-Container {
-      width: 90%;
-      margin: auto;
-    }
-    .containerFooter {
-      width: 100%;
-      margin: auto;
-      flex-direction: column;
-    }
-    .about {
-      width: 100%;
-      text-align: left;
-      margin-bottom: 10%;
-      p {
-        font-size: 0.60em;
-        margin-top: 5%;
-        letter-spacing: -0.25px;
-      }
-    }
-    .footerLogeY{
-      width: 124px;
-    }
-    .social {
-      width: 95%;
-      margin: auto;
-      border-top: 0.5px solid rgb(165, 164, 164);
-      border-left: 0;
-
-      
-    }
-    .inputCaption{
-      font-size: 0.9em;
-      letter-spacing: -0.3px;
-      text-align: center;
-      padding-top: 2em;
-      font-weight: 300;
-    }
-    .buttonInInput {
-      width: 100%;
-      input {
-        width: 95%;
-      }
-      button {
-        width: 40%;
-      }
-    }
-    .sections {
-      width: 100%;
-      margin-left: 1%;
-      margin-bottom: 1em;
-      border-right: 0;
-      
-    }
-    .yLinks {
-      font-size: 0.6em;
-      font-weight: 600;
-      width: 100%;
-      padding: 0.9em 0.5em;
-    }
-    .footermenu{
-      border-top: 0.5px solid rgb(165, 164, 164);
-      padding-top: 1.5em;
-      margin-top: 1.5em;
-    }
-    .media {
-      width: 100%;
-      align-items: flex-start;
-    }
-    .secondDiv {
-      flex-direction: column;
-    }
-    .copyRights {
-      width: 100%;
-      font-size: 0.9em;
-    }
-    .payment {
-      width: 90%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin-top: 1em;
-      margin-bottom: 1em;
-      padding-bottom: 1em;
-      border-bottom: 0.5px solid rgb(165, 164, 164);
-    }
-    .nasnav {
-      width: 95%;
-      justify-content: space-evenly;
-    }
-  }
+}

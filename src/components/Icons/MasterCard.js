@@ -1,10 +1,10 @@
-import React from 'react';
-import mastercard from '../../images/mastercard1.png';
+import React from "react";
+import mastercard from "../../images/mastercard1.png";
 
 const MasterCard = () => {
   return (
     <div>
-      <img src={mastercard} className='iconsSize'/>
+      <img src={mastercard} className="iconsSize" />
     </div>
   );
 };
