@@ -1,68 +1,72 @@
-.allGnav {
+.allGnav{
   width: 100%;
   background-color: var(--primary-color);
 }
 .Gnav {
-  width: 80%;
-  height: 6vh;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.partA {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.partB {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 0.9vw;
-}
-.partC {
-  width: 35%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
-
-  div {
+    width: 80%;
+    height: 6vh;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
-    font-size: 0.9vw;
-
-    p {
-      margin-left: 7%;
-      font-size: 0.9vw;
-      width: 75%;
-    }
+    
   }
-}
-.shopNow {
-  text-decoration: underline !important;
-  color: blue !important;
-  margin-left: 5px;
-}
-.yeshtry-mobile {
-  width: 93px;
-  height: 5vh;
-  margin: auto;
-  display: none;
-}
-
-@media screen and (max-width: 1000px) {
-  .Gnav {
-    display: none;
-  }
-  .yeshtry-mobile {
-    display: block;
+  
+  .partA {
     display: flex;
+    justify-content: space-around;
     align-items: center;
   }
+  
+
+  .partB {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9vw;
+  }
+  .partC {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  
+    div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 30%;
+      font-size: 0.9vw;
+  
+      p {
+        margin-left: 7%;
+        font-size: 0.9vw;
+        width: 75%;
+      }
+    }
+  }
+  .shopNow {
+    text-decoration: underline !important;
+    color: blue !important;
+    margin-left: 5px;
+  }
+.yeshtry-mobile{
+width: 93px;
+height: 5vh;
+margin: auto;
+display: none;
 }
+
+  @media screen and (max-width:1000px) {
+    .Gnav{
+      display: none;
+    }
+    .yeshtry-mobile{
+      display: block;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  

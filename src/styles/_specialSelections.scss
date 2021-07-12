@@ -59,7 +59,6 @@ h2 {
 .productListSpecial {
   display: none;
 }
-
 .bestsellerTitleS {
   h1 {
     font-size: 1.5vw;
@@ -68,12 +67,11 @@ h2 {
     font-size: 1vw;
   }
 }
-
-@media screen and (min-width: 300px) and (max-width: 1000px) {
+@media screen and (min-width: 300px) and (max-width: 640px) {
   .bestsellerTitleS {
     width: 173px;
     h1 {
-      font-size: 0.9em;
+      font-size: 1em;
     }
     h3 {
       font-size: 0.5em;

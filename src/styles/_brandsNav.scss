@@ -1,74 +1,79 @@
 .Bnav {
-  width: 70%;
-  margin: auto;
-  min-height: 9vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: tranparent !important;
-  color: #000000 !important;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-}
-
-.partBb {
-  display: flex;
-  justify-content: space-around;
-  font-size: 0.9vw;
-}
-.partCb {
-  width: 40%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
-
-  .rightCart {
+    width: 70%;
+    margin: auto;
+    min-height: 9vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 30%;
+    background: tranparent !important;
+    color: #000000 !important;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+  
+  .partBb {
+    display: flex;
+    justify-content: space-around;
     font-size: 0.9vw;
-
-    p {
-      margin-left: 7%;
+  }
+  .partCb {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  
+    .rightCart {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 30%;
       font-size: 0.9vw;
-      width: 75%;
+  
+      p {
+        margin-left: 7%;
+        font-size: 0.9vw;
+        width: 75%;
+      }
     }
   }
-}
-.rightCartS {
-  display: none;
-}
-.rightCartL {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 25%;
-  font-size: 0.9vw;
-}
-
-.munu-part {
-  display: none;
-}
-@media screen and (max-width: 1000px) {
-  .search-part {
+  .rightCartS{
     display: none;
-  }
-  .munu-part {
-    display: block;
-  }
-  .Bnav {
-    width: 100%;
-    min-height: 6vh;
   }
   .rightCartL {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25%;
+    font-size: 0.9vw;
+  }
+
+  
+
+
+  .munu-part{
     display: none;
   }
-  .rightCartS {
-    display: block;
+  @media screen and (max-width:1000px) {
+    .search-part{
+      display: none;
+    }
+    .munu-part{
+      display: block;
+    }
+    .Bnav{
+      width: 100%;
+      min-height: 6vh;
+    }
+    .rightCartL{
+      display: none;
+    }
+    .rightCartS{
+      display: block;
+    }
+    .rightCart p{
+      display: none;
+    }
   }
-  .rightCart p {
-    display: none;
-  }
-}
+  
+  
